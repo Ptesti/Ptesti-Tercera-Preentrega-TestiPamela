@@ -1,0 +1,27 @@
+{% extends 'repositorio/index.html' %}
+
+{% block titulo %}
+    <h1>Alumnos</h1>
+{% endblock titulo %}
+    
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for a in alummos %}
+        <tr>
+            <td>{{ a.id}}</td>
+            <td>{{ a.nombre}}</td>
+            <td>{{ a.apellido}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}
