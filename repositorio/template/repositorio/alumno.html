@@ -15,12 +15,12 @@
         </tr>
     </thead>
     <tbody>
-    {% for a in alummos %}
-        <tr>
-            <td>{{ a.id}}</td>
-            <td>{{ a.nombre}}</td>
-            <td>{{ a.apellido}}</td>
-        </tr>
+    {% for alumno in alumnos %}
+    <tr>
+        <td>{{ alumno.id}}</td>
+        <td>{{ alumno.nombre}}</td>
+        <td>{{ alumno.apellido}}</td>
+    </tr>
     {% endfor %}
     </tbody>
 </table>

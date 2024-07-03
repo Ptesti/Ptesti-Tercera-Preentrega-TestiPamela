@@ -8,7 +8,7 @@ def home (request):
     return render (request, "repositorio/index.html")
 
 def alumno (request):
-    contexto = {"alumno": Alumno.objects.all()}
+    contexto = {"alumnos": Alumno.objects.all()}
     return render (request, "repositorio/alumno.html", contexto)
 
 def docente (request):
