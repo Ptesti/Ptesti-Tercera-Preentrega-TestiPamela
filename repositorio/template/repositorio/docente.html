@@ -1,10 +1,29 @@
 {% extends 'repositorio/index.html' %}
 
 {% block titulo %}
-    <h1>Docentes</h1>
+    <h1>Docente</h1>
 {% endblock titulo %}
     
 
 {% block contenido %}
-    <h2>Este es el cuerpo docente</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo Electrónico</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for profesor in docentes %}
+    <tr>
+        <td>{{ docente.id}}</td>
+        <td>{{ docente.nombre}}</td>
+        <td>{{ docente.apellido}}</td>
+        <td>{{ docente.mail}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
 {% endblock contenido %}

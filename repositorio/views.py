@@ -12,7 +12,8 @@ def alumno (request):
     return render (request, "repositorio/alumno.html", contexto)
 
 def docente (request):
-    return render (request, "repositorio/docente.html")
+    contexto = {"docentes": Profesor.objects.all()}
+    return render (request, "repositorio/docente.html", contexto)
 
 def materia (request):
     return render (request, "repositorio/materia.html")
