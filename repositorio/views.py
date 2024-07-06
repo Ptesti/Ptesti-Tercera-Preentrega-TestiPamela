@@ -21,3 +21,6 @@ def materia (request):
 
 def mundoliterario (request):
     return render (request, "repositorio/MundoLiterario.html")
+
+def acerca (request):
+    return render (request, "repositorio/acerca.html")
