@@ -24,4 +24,11 @@
     {% endfor %}
     </tbody>
 </table>
+<h2>Añadir Alumno</h2>
+<form method="post">
+    <a href="{% url 'alumno_create' %}" class="btn btn-primary">Crear</a>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
 {% endblock contenido %}
